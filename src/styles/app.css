@@ -22,3 +22,7 @@ footer {
     position: fixed;
     bottom: 0px;
 }
+
+#footer-link {
+    color: black;
+}
