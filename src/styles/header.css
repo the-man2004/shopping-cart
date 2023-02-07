@@ -1,5 +1,14 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
 .header-container {
     background-color: black;
+    width: 100vw;
     display: grid;
     grid-template-columns: 5fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 100px;
@@ -32,6 +41,7 @@
     grid-area: cart-link;
     width: 30px;
     height: auto;
+    color: black;
 }
 
 #cart-link {
@@ -42,6 +52,18 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+}
+
+
+#home-link:hover, 
+#shop-link:hover, 
+#about-link:hover {
+    font-size: 1.1rem;
+}
+
+#cart:hover {
+    width: 31.5px;
+    height: 31.5px;
 }
 
 a {
