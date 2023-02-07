@@ -1,5 +1,6 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useState } from "react"
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Home from "./components/Home.js";
 import About from "./components/About.js";
 import Cart from "./components/Cart.js";
@@ -8,6 +9,9 @@ import Shop from "./components/Shop";
 import "./styles/app.css";
 
 const App = () => {
+
+  const [items, setItems] = useState(0);
+
   return (
     <BrowserRouter>
       <div id="body">
@@ -19,7 +23,7 @@ const App = () => {
           <Route path="/shop" element={<Shop />} />
         </Routes>
         <footer>
-          <p>Copyright © 2023 <a href="">the-man2004</a></p>
+          <p>Copyright © 2023 <Link id="footer-link" to="">the-man2004</Link></p>
         </footer>
       </div>
     </BrowserRouter>
