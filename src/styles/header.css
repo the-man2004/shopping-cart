@@ -1,0 +1,50 @@
+.header-container {
+    background-color: black;
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px;
+    grid-template-areas: 
+    "header-title home-link shop-link about-link cart-link";
+
+    align-items: center;
+}
+
+#header-title {
+    color: white;
+    grid-area: header-title;
+    font-size: 2.5rem;
+    margin-left: 6vw;
+}
+
+#home-link {
+    grid-area: home-link;
+}
+
+#shop-link {
+    grid-area: shop-link;
+}
+
+#about-link {
+    grid-area: about-link;
+}
+
+#cart {
+    grid-area: cart-link;
+    width: 30px;
+    height: auto;
+}
+
+#cart-link {
+    width: 60px;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
