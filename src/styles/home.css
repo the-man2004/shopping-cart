@@ -1,0 +1,59 @@
+#pc-img {
+    width: 100vw;
+    height: auto;
+    opacity: 0.5;
+}
+
+.img-container {
+    position: relative;
+}
+
+.home-title {
+    position: absolute;
+    top: 0px;
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#home-p1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(54, 54, 54);
+}
+
+#home-p2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+#home-p3 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+#home-shop-link {
+    color: black;
+}
+
+#shop-btn {
+    width: 200px;
+    height: 60px;
+    font-size: 2rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+
+    padding: 5px;
+    position: absolute;
+    top: 70%;
+}
+
+#shop-btn:hover {
+    font-size: 2.1rem;
+    width: 210px;
+    height: 62px;
+}
